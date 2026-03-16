@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO 2026: Aggiunti meta description per una migliore indicizzazione -->
+    <meta name="description" content="Scopri il Vittoriano e l'Altare della Patria a Roma: storia, architettura e simbologia del monumento nazionale.">
+    <title>Il Vittoriano - Simbolo di Unità</title>
+    
+    <!-- Google Fonts & Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Link al CSS (assicurati che esista) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sfondo dinamico gestito via JS -->
+    <div id="bg-container"></div>
+    <div class="overlay"></div>
+
+    <nav class="sidebar" role="navigation" aria-label="Menu principale">
+        <div class="logo">
+            <h2>VITTORIANO</h2>
+            <span>Altare della Patria</span>
+        </div>
+        
+        <div class="menu-items">
+            <!-- Nota: la classe 'active' iniziale deve corrispondere alla sezione 'home' -->
+            <button class="nav-btn active" onclick="navigate('home')">
+                <span class="material-icons">account_balance</span> Il Monumento
+            </button>
+            <button class="nav-btn" onclick="navigate('storia')">
+                <span class="material-icons">history_edu</span> Storia e Architettura
+            </button>
+            <button class="nav-btn" onclick="navigate('pace')">
+                <span class="material-icons">local_fire_department</span> La Pace e il Milite
+            </button>
+            <button class="nav-btn" onclick="navigate('simbologia')">
+                <span class="material-icons">auto_awesome</span> Simbologia
+            </button>
+            <button class="nav-btn" onclick="navigate('panorama')">
+                <span class="material-icons">panorama</span> Vista su Roma
+            </button>
+        </div>
+
+        <div class="footer-nav">
+            <p>&copy; 2026 Guida Monumentale</p>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sezione HOME -->
+        <section id="home" class="content active" data-bg="https://images.unsplash.com/photo-1529154036614-a60975f5c760?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            <span class="tag">Monumento Nazionale</span>
+            <h1>L'Altare della Patria</h1>
+            <p class="lead">Un gigante di marmo bianco che veglia su Roma, simbolo indiscusso dell'identità nazionale e dell'unità d'Italia.</p>
+            
+            <div class="text-block">
+                <p>Situato al centro di Roma moderna, in Piazza Venezia, il Vittoriano (o Altare della Patria) fu costruito per celebrare il Padre della Patria, Vittorio Emanuele II.</p>
+            </div>
+
+            <div class="info-grid">
+                <div><h3>1885</h3><p>Inizio Lavori</p></div>
+                <div><h3>Botticino</h3><p>Marmo Bresciano</p></div>
+                <div><h3>81m</h3><p>Altezza</p></div>
+            </div>
+        </section>
+
+        <!-- Sezione STORIA -->
+        <section id="storia" class="content" data-bg="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            <span class="tag">L'Architettura</span>
+            <h1>Un Progetto Faraonico</h1>
+            <p class="lead">Ideato dall'architetto Giuseppe Sacconi, il monumento rappresenta uno dei massimi esempi dello stile eclettico neoclassico.</p>
+            
+            <div class="text-block">
+                <p>La costruzione del Vittoriano fu un'impresa titanica che durò decenni, dal 1885 all'inaugurazione del 1911.</p>
+                <p>La statua equestre del Re è talmente grande che venti persone pranzarono all'interno della pancia del cavallo prima del montaggio finale.</p>
+            </div>
+        </section>
+
+        <!-- Sezione PACE -->
+        <section id="pace" class="content" data-bg="https://www.italia.it/content/dam/tdh/it/interests/italia/i-6-posti-piu-belli-in-italia-da-non-perdere/media/1600X1000_6_posti_piu_belli_d_italia_da_non_perdere_hero.jpg">
+            <span class="tag">Memoria e Pace</span>
+            <h1>Il Custode della Pace</h1>
+            <p class="lead">Al centro del monumento riposa il Milite Ignoto, simbolo del sacrificio supremo.</p>
+            
+            <div class="text-block">
+                <p>Il 4 novembre 1921 fu tumulato qui il corpo di un soldato sconosciuto, scelto da Maria Bergamas tra undici caduti.</p>
+                <p class="highlight">La Pace non è solo assenza di guerra, ma memoria attiva.</p>
+            </div>
+        </section>
+
+        <!-- Sezione SIMBOLOGIA -->
+        <section id="simbologia" class="content" data-bg="https://images.unsplash.com/photo-1516550893923-42d28e5677af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+            <span class="tag">I Valori</span>
+            <h1>Pensiero e Azione</h1>
+            <p class="lead">Ogni statua e colonna del Vittoriano ha un significato allegorico preciso.</p>
+            
+            <div class="text-block">
+                <p>Le due fontane ai lati rappresentano i mari d'Italia: l'Adriatico e il Tirreno.</p>
+            </div>
+        </section>
+
+        <!-- Sezione PANORAMA -->
+        <section id="panorama" class="content" data-bg="https://www.anitavillas.it/blog/wp-content/uploads/i-posti-piu-belli-d-italia.jpg">
+            <span class="tag">La Vista</span>
+            <h1>Roma ai tuoi piedi</h1>
+            <p class="lead">Dalla "Terrazza delle Quadrighe" lo sguardo abbraccia millenni di virtù e guerre, uno spettacolo senza precedenti.</p>
+            
+            <div class="text-block">
+                <p>Attraverso gli ascensori panoramici è possibile ammirare i Fori Imperiali e la Cupola di San Pietro.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script JavaScript corretto -->
+    <script src="script.js"></script>
+
+</body>
+</html>
