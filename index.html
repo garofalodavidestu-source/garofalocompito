@@ -3,119 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO 2026: Aggiunti meta description per una migliore indicizzazione -->
-    <meta name="description" content="Scopri il Vittoriano e l'Altare della Patria a Roma: storia, architettura e simbologia del monumento nazionale.">
-    <title>Il Vittoriano - Simbolo di Unità</title>
-    
-    <!-- Google Fonts & Material Icons -->
+    <meta name="description" content="Visita il Bunker di Piazza Libertà a Ponte San Pietro: storia, rifugio antiaereo e memoria della Seconda Guerra Mondiale.">
+    <title>Il Bunker - Piazza Libertà San Pietro</title>
+   
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-    
-    <!-- Link al CSS (assicurati che esista) -->
+   
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Sfondo dinamico gestito via JS -->
     <div id="bg-container"></div>
     <div class="overlay"></div>
 
     <nav class="sidebar" role="navigation" aria-label="Menu principale">
         <div class="logo">
-            <h2>VITTORIANO</h2>
-            <span>Altare della Patria</span>
+            <h2>BUNKER 1944</h2>
+            <span>Ponte San Pietro</span>
         </div>
-        
+       
         <div class="menu-items">
-            <!-- Nota: la classe 'active' iniziale deve corrispondere alla sezione 'home' -->
             <button class="nav-btn active" onclick="navigate('home')">
-                <span class="material-icons">account_balance</span> Il Monumento
+                <span class="material-icons">vpn_lock</span> Il Rifugio
             </button>
             <button class="nav-btn" onclick="navigate('storia')">
-                <span class="material-icons">history_edu</span> Storia e Architettura
+                <span class="material-icons">history_edu</span> I Bombardamenti
             </button>
             <button class="nav-btn" onclick="navigate('pace')">
-                <span class="material-icons">local_fire_department</span> La Pace e il Milite
+                <span class="material-icons">church</span> La Memoria
             </button>
             <button class="nav-btn" onclick="navigate('simbologia')">
-                <span class="material-icons">auto_awesome</span> Simbologia
+                <span class="material-icons">architecture</span> La Struttura
             </button>
             <button class="nav-btn" onclick="navigate('panorama')">
-                <span class="material-icons">panorama</span> Vista su Roma
+                <span class="material-icons">place</span> Il Territorio
             </button>
         </div>
 
         <div class="footer-nav">
-            <p>&copy; 2026 Guida Monumentale</p>
+            <p>&copy; 2026 Memoria Storica</p>
         </div>
     </nav>
 
     <main>
-        <!-- Sezione HOME -->
-        <section id="home" class="content active" data-bg="https://images.unsplash.com/photo-1529154036614-a60975f5c760?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-            <span class="tag">Monumento Nazionale</span>
-            <h1>L'Altare della Patria</h1>
-            <p class="lead">Un gigante di marmo bianco che veglia su Roma, simbolo indiscusso dell'identità nazionale e dell'unità d'Italia.</p>
-            
+        <section id="home" class="content active" data-bg="https://bunker1944.it/wp-content/uploads/2022/11/MG_3161-scaled.jpg">
+            <span class="tag">Rifugio Antiaereo</span>
+            <h1>Sotto Piazza Libertà</h1>
+            <p class="lead">Un labirinto di cemento armato nel cuore di Ponte San Pietro, costruito per proteggere la popolazione dall'orrore della guerra.</p>
+           
             <div class="text-block">
-                <p>Situato al centro di Roma moderna, in Piazza Venezia, il Vittoriano (o Altare della Patria) fu costruito per celebrare il Padre della Patria, Vittorio Emanuele II.</p>
+                <p>Situato nelle viscere di Piazza della Libertà, questo bunker rappresenta una capsula del tempo. Un luogo dove la comunità cercava salvezza durante le incursioni aeree alleate del 1944-1945.</p>
             </div>
 
             <div class="info-grid">
-                <div><h3>1885</h3><p>Inizio Lavori</p></div>
-                <div><h3>Botticino</h3><p>Marmo Bresciano</p></div>
-                <div><h3>81m</h3><p>Altezza</p></div>
+                <div><h3>1944</h3><p>Costruzione</p></div>
+                <div><h3>Cemento</h3><p>Rinforzato</p></div>
+                <div><h3>400</h3><p>Posti ca.</p></div>
             </div>
         </section>
 
-        <!-- Sezione STORIA -->
-        <section id="storia" class="content" data-bg="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-            <span class="tag">L'Architettura</span>
-            <h1>Un Progetto Faraonico</h1>
-            <p class="lead">Ideato dall'architetto Giuseppe Sacconi, il monumento rappresenta uno dei massimi esempi dello stile eclettico neoclassico.</p>
-            
+        <section id="storia" class="content" data-bg="https://bunker1944.it/wp-content/uploads/2022/11/MG_3158-scaled.jpg">
+            <span class="tag">La Guerra</span>
+            <h1>Obiettivo Strategico</h1>
+            <p class="lead">Ponte San Pietro era un bersaglio primario a causa dei ponti ferroviari e delle industrie aeronautiche della zona.</p>
+           
             <div class="text-block">
-                <p>La costruzione del Vittoriano fu un'impresa titanica che durò decenni, dal 1885 all'inaugurazione del 1911.</p>
-                <p>La statua equestre del Re è talmente grande che venti persone pranzarono all'interno della pancia del cavallo prima del montaggio finale.</p>
+                <p>Le sirene "urlavano" e la popolazione correva verso le scale di accesso in piazza. Il rombo dei bombardieri B-17 e B-24 scuoteva la terra, mentre sottosuolo si pregava aspettando il silenzio.</p>
+                <p>Il rifugio non era solo un riparo fisico, ma l'ultima speranza contro la distruzione che pioveva dal cielo.</p>
             </div>
         </section>
 
-        <!-- Sezione PACE -->
-        <section id="pace" class="content" data-bg="https://www.italia.it/content/dam/tdh/it/interests/italia/i-6-posti-piu-belli-in-italia-da-non-perdere/media/1600X1000_6_posti_piu_belli_d_italia_da_non_perdere_hero.jpg">
-            <span class="tag">Memoria e Pace</span>
-            <h1>Il Custode della Pace</h1>
-            <p class="lead">Al centro del monumento riposa il Milite Ignoto, simbolo del sacrificio supremo.</p>
-            
+        <section id="pace" class="content" data-bg="https://bunker1944.it/wp-content/uploads/2022/11/MG_3123-scaled.jpg">
+            <span class="tag">Ricordo</span>
+            <h1>Il Silenzio Oggi</h1>
+            <p class="lead">Restituito alla comunità, il bunker è oggi un monito contro tutte le guerre, un luogo di educazione e rispetto.</p>
+           
             <div class="text-block">
-                <p>Il 4 novembre 1921 fu tumulato qui il corpo di un soldato sconosciuto, scelto da Maria Bergamas tra undici caduti.</p>
-                <p class="highlight">La Pace non è solo assenza di guerra, ma memoria attiva.</p>
+                <p>Grazie al lavoro di recupero, è possibile percorrere nuovamente quei gradini. Non più per fuggire, ma per capire.</p>
+                <p class="highlight">Le scritte sui muri e i segni del tempo raccontano la paura e il coraggio di chi ci ha preceduto.</p>
             </div>
         </section>
 
-        <!-- Sezione SIMBOLOGIA -->
-        <section id="simbologia" class="content" data-bg="https://images.unsplash.com/photo-1516550893923-42d28e5677af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-            <span class="tag">I Valori</span>
-            <h1>Pensiero e Azione</h1>
-            <p class="lead">Ogni statua e colonna del Vittoriano ha un significato allegorico preciso.</p>
-            
+        <section id="simbologia" class="content" data-bg="https://www.radiolombardia.it/wp-content/uploads/2023/11/Bunker-Sesto-san-Giovanni_Mi-2-scaled.jpg">
+            <span class="tag">Ingegneria Bellica</span>
+            <h1>Vita nel Buio</h1>
+            <p class="lead">Progettato secondo rigorosi criteri militari, il rifugio doveva garantire sopravvivenza e ventilazione in spazi angusti.</p>
+           
             <div class="text-block">
-                <p>Le due fontane ai lati rappresentano i mari d'Italia: l'Adriatico e il Tirreno.</p>
+                <p>La struttura è composta da gallerie voltate in calcestruzzo, dotate di sistemi di aerazione manuale e pesanti porte blindate antigas.</p>
             </div>
         </section>
 
-        <!-- Sezione PANORAMA -->
-        <section id="panorama" class="content" data-bg="https://www.anitavillas.it/blog/wp-content/uploads/i-posti-piu-belli-d-italia.jpg">
-            <span class="tag">La Vista</span>
-            <h1>Roma ai tuoi piedi</h1>
-            <p class="lead">Dalla "Terrazza delle Quadrighe" lo sguardo abbraccia millenni di virtù e guerre, uno spettacolo senza precedenti.</p>
-            
+        <section id="panorama" class="content" data-bg="https://i2.wp.com/www.cosasifa.com/wp-content/uploads/2024/11/dalmine_800x417-768x400-1.jpg?resize=940%2C519&ssl=1">
+            <span class="tag">Il Luogo</span>
+            <h1>Ponte San Pietro</h1>
+            <p class="lead">Sopra, la vita moderna scorre frenetica nella piazza rinnovata. Sotto, il tempo si è fermato al 1945.</p>
+           
             <div class="text-block">
-                <p>Attraverso gli ascensori panoramici è possibile ammirare i Fori Imperiali e la Cupola di San Pietro.</p>
+                <p>L'ingresso, quasi nascosto nel tessuto urbano odierno, rappresenta una porta tra due mondi: la luce della libertà conquistata e l'oscurità del passato da non dimenticare.</p>
             </div>
         </section>
     </main>
 
-    <!-- Script JavaScript corretto -->
     <script src="script.js"></script>
 
 </body>
